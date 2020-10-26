@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/lblIncio"
+        android:layout_width="119dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginBottom="73dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal"
+        android:onClick="onClickFiguras"
+        android:text="Empecemos"
+        app:layout_constraintBottom_toTopOf="@+id/lblDatos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblDatos"
+        android:layout_width="141dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDatos"
+        app:layout_constraintStart_toStartOf="@+id/lblIncio"
+        app:layout_constraintTop_toBottomOf="@+id/lblIncio" />
+
+    <Button
+        android:id="@+id/buttonDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="73dp"
+        android:onClick="formulario"
+        android:text="Ingresar Datos"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFiguras"
+        app:layout_constraintStart_toStartOf="@+id/lblDatos"
+        app:layout_constraintTop_toBottomOf="@+id/lblDatos" />
+
+    <Button
+        android:id="@+id/buttonFiguras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="79dp"
+        android:enabled="false"
+        android:onClick="onClickFiguras"
+        android:text="Figuras"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSeries"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDatos"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDatos" />
+
+    <Button
+        android:id="@+id/buttonSeries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="129dp"
+        android:enabled="false"
+        android:text="Series"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonFiguras"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFiguras" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
