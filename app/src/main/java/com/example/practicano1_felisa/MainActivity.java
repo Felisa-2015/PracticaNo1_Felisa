@@ -46,8 +46,6 @@ public class MainActivity extends AppCompatActivity {
     public void formulario(View view){
         Intent intent=new Intent(this, Formulario.class);
         startActivityForResult(intent,REQUEST_CODE);
-
-
     }
 
     @Override
@@ -58,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             if(bundle != null) {
                 usuario = (Usuario) bundle.getParcelable("dataUserClass");
                 lblDatos.setText(usuario.toString());
-                //Toast.makeText(this, usuario.toString(), Toast.LENGTH_LONG).show();
+                Toast.makeText(this, usuario.toString(), Toast.LENGTH_LONG).show();
                 habilitarBotonoes();
             } else {
                 Toast.makeText(this, "Error: no se recibieron datos", Toast.LENGTH_LONG).show();
