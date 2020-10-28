@@ -14,7 +14,6 @@ public class FigurasActivity extends AppCompatActivity {
     private TextView lblMensaje;
     private ImageView imagenTriangulo;
     private ImageView imagenCirculo;
-    private ImageView imagenCuadrado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
