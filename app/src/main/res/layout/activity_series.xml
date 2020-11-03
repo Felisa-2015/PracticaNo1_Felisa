@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".Series">
+
+    <TextView
+        android:id="@+id/textViewmen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="sans-serif-condensed-medium"
+        android:foregroundGravity="center_vertical"
+        android:text="Completa la serie"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <ImageView
+        android:id="@+id/imageViewTriangulo1"
+        android:layout_width="72dp"
+        android:layout_height="77dp"
+        app:srcCompat="@drawable/triangulo"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <ImageView
+        android:id="@+id/imageViewTriangulo2"
+        android:layout_width="72dp"
+        android:layout_height="77dp"
+        app:srcCompat="@drawable/triangulo"
+        tools:layout_editor_absoluteX="237dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <ImageView
+        android:id="@+id/imageViewTriangulo3"
+        android:layout_width="82dp"
+        android:layout_height="78dp"
+        app:srcCompat="@drawable/triangulo"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="432dp" />
+
+    <ImageView
+        android:id="@+id/imageViewCirculo1"
+        android:layout_width="72dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/circulo"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <ImageView
+        android:id="@+id/imageViewCirculo3"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/circulo"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="432dp" />
+
+    <ImageView
+        android:id="@+id/imageViewCirculo2"
+        android:layout_width="62dp"
+        android:layout_height="89dp"
+        app:srcCompat="@drawable/circulo"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <TextView
+        android:id="@+id/textViewSigue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="¿Cual sigue?"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <ImageView
+        android:id="@+id/imageViewCuadrado"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        app:srcCompat="@drawable/cuadrado"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <Button
+        android:id="@+id/buttonRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclickRegresar"
+        android:text="Regresar"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="575dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

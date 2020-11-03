@@ -9,38 +9,37 @@
 
     <TextView
         android:id="@+id/lblIncio"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:textAlignment="center"
+        android:gravity="center_horizontal"
         android:text="Empecemos"
+        android:textAlignment="center"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center_horizontal" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/lblDatos"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:textSize="20sp"
+        android:layout_marginTop="36dp"
+        android:gravity="center_horizontal"
         android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblIncio"
-        android:gravity="center_horizontal" />
+        app:layout_constraintTop_toBottomOf="@+id/lblIncio" />
 
     <Button
         android:id="@+id/buttonDatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="59dp"
         android:onClick="formulario"
         android:text="Ingresar Datos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblDatos" />
 
@@ -48,27 +47,25 @@
         android:id="@+id/buttonFiguras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="113dp"
         android:enabled="false"
         android:onClick="onClickFiguras"
         android:text="Figuras"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonDatos"
         app:layout_constraintTop_toBottomOf="@+id/buttonDatos" />
 
     <Button
         android:id="@+id/buttonSeries"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="91dp"
         android:enabled="false"
+        android:onClick="onClickSeries"
         android:text="Series"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonFiguras"
-        app:layout_constraintVertical_bias="0.511" />
+        app:layout_constraintStart_toStartOf="@+id/buttonFiguras"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFiguras" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

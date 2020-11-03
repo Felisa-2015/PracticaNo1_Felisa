@@ -52,12 +52,10 @@ public class Usuario implements Parcelable {
 
     @Override
     public String toString() {
-        return "Usuario{" +
-                "nombre='" + nombre + '\'' +
-                ", edad=" + edad +
-                ", colorFavorito='" + colorFavorito + '\'' +
-                ", status=" + status +
-                '}';
+        return
+                "Nombre :'" + nombre  +
+                ", Edad :" + edad +
+                ", color :'" + colorFavorito ;
     }
 
     @Override

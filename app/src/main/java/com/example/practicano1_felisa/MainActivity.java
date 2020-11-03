@@ -70,4 +70,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onClickSeries(View view){
+        Intent intent= new Intent(this,Series.class);
+        intent.putExtra("userClass",usuario);
+        startActivity(intent);
+
+    }
+
 }
